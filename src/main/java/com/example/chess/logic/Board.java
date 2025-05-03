@@ -208,7 +208,8 @@ public class Board {
         return false;
     }
 
-    public boolean isInCheckmate(Color color) {
+    public boolean isInCheckmate(Color color)
+    {
         return isInCheck(color) && generateLegalMoves(color).isEmpty();
     }
     /**
